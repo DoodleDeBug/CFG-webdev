@@ -4,125 +4,182 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <title>My Museums</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Tour</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">About</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Museums</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="./about.html">About</a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <h1>My Museums</h1>
-    <h2>Where the adventures begins!</h2>
 
-    <h3><p>Our Selection of Museums.</p></h3>
-    <ul>
-      <li>British Museum</li>
-      <li>Natural History Museum</li>
-      <li>Science Museum</li>
-      <li>Horminan Museum & Gardens</li>
-    </ul>
-    <button>Find Out More!</button>
+    <div class="container-lg">
+      <h3>Our Selection of Museums</h3>
 
-    <h4><p>British Museum My Museum Facts!</p></h4>
-    About: The British Museum is a public museum dedicated to human history, art
-    and culture located in the Bloomsbury area of London. Its permanent
-    collection of eight million works is among the largest and most
-    comprehensive in existence. It documents the story of human culture from its
-    beginnings to the present.
+      <div class="container-sm">
+        <div class="list-group">
+          <a
+            href="#british"
+            class="list-group-item list-group-item-action active"
+            aria-current="true"
+          >
+            British Museum
+          </a>
+          <a href="#nhm" class="list-group-item list-group-item-action"
+            >Natural History Museum</a
+          >
+          <a href="#horniman" class="list-group-item list-group-item-action"
+            >Horniman Museum & Gardens</a
+          >
+          <a href="#science" class="list-group-item list-group-item-action"
+            >Science Museum</a
+          >
+        </div>
+      </div>
+    </div>
+<br/>
+    <div id="british" class="container-lg">
+      <div class="card" style="width: 50rem">
+        <div class="card-body">
+          <h5 class="card-title">British Museum - My Museum Facts!</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Bloomsbury, West London</h6>
+          <p class="card-text">
+            The British Museum is a public museum dedicated to human history,
+            art and culture located in the Bloomsbury area of London. Its
+            permanent collection of eight million works is among the largest and
+            most comprehensive in existence. It documents the story of human
+            culture from its beginnings to the present.
+          </p>
+          <p class="card-text">Opening Times: Monday-Sunday 10am-5pm</p>
+          <p class="card-text"><strong> Events Going On:</strong>
+            <ul>
+              <li>Hieroglyphs unlocking ancient Egypt.</li>
+              <li>Mary Gillick modeling The Queen's portrait</li>
+              <li>Drawing attention to emerging British artists.</li>
+            </ul></p>
+          <a href="https://www.britishmuseum.org" class="card-link"
+            >Visit the British Museum!</a
+          >
+        </div>
+      </div>
+    </div>
     <br />
-
-    Location: Bloomsbury, West London
-    <br />
-
-    Opening Times: Monday-Sunday 10am-5pm
-    <br />
-    <strong> Events Going On:</strong>
-    <ul>
-      <li>Hieroglyphs unlocking ancient Egypt.</li>
-      <li>Mary Gillick modeling The Queen’s portrait</li>
-      <li>Drawing attention to emerging British artists.</li>
-    </ul>
-    <a href="https://www.britishmuseum.org">Visit British Museum!</a>
-
-    <br />
-    <h4>Natural History Museum My Museum Facts!</h4>
-    About: The Natural History Museum in London is a museum that exhibits a vast
+    <div id="nhm" class="container-lg">
+      <div class="card" style="width: 50rem">
+        <div class="card-body">
+          <h5 class="card-title">Natural History Museum - My Museum Facts!</h5>
+          <h6 class="card-subtitle mb-2 text-muted">South Kensington, South West London</h6>
+          <p class="card-text">
+            The Natural History Museum in London is a museum that exhibits a vast
     range of specimens from various segments of natural history. It is one of
     three major museums on Exhibition Road in South Kensington, the others being
     the Science Museum and the Victoria and Albert Museum.
-    <br />
-    Location: South Kensington, South West London. Opening Times: Monday- Sunday
-    10am-5:30pm
-    <br />
-    <br />
-    <strong>Events Going On!</strong>
-    <ul>
-      <li>Dino Snores: The Dippy Special</li>
+          </p>
+          <p class="card-text">Opening Times: Monday- Sunday
+            10am-5:30pm</p>
+          <p class="card-text"><strong> Events Going On:</strong>
+            <ul>
+              <li>Dino Snores: The Dippy Special</li>
       <li>Yoga at the Natural History Museum</li>
-    </ul>
-    <a href="https://www.nhm.ac.uk">Vist Natural History Museum</a>
+            </ul></p>
+            <a class="card-link" href="https://www.nhm.ac.uk">Vist the Natural History Museum!</a>
+        </div>
+      </div>
+    </div>
     <br />
-    <br />
-
-    <h4>Horniman Museum & Gardens, My Museum Facts!</h4>
-    <br />
-    About: The Horniman connects us all with global cultures and the natural
+    <div id="horniman" class="container-lg">
+      <div class="card" style="width: 50rem">
+        <div class="card-body">
+          <h5 class="card-title">Horniman Museum & Gardens - My Museum Facts!</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Forest Hill, South East London</h6>
+          <p class="card-text">
+            The Horniman connects us all with global cultures and the natural
     environment, encouraging us to shape a positive future for the world we all
     share.
-    <br />
-    Location: Forest Hill, South East London. Opening Times:
-    <ul>
-      <li>Museum: Monday - Sunday 10am-5:30pm</li>
-      <li>Gardens: Monday- Saturday 7:15am-8:50pm</li>
-      <li>Sunday 8am-8: 50pm</li>
-    </ul>
-    <br />
-    <strong> Events going on! </strong>
-    <ul>
-      <li>Aquarium</li>
+          </p>
+          <p class="card-text">Opening Times:
+            <ul>
+              <li>Museum: Monday - Sunday 10am-5:30pm</li>
+              <li>Gardens: Monday- Saturday 7:15am-8:50pm</li>
+              <li>Sunday 8am-8: 50pm</li>
+            </ul></p>
+          <p class="card-text"><strong> Events Going On:</strong>
+            <ul>
+              <li>Aquarium</li>
       <li>Members Meet the Animals</li>
       <li>
         Flower Power Family Rave with BFLF has a range of activities with music
         including arts & crafts, storytelling, park quizzes and more.
       </li>
-    </ul>
-    <a href="https://www.sciencemuseum.org.uk">Visit The Horniman!</a>
+            </ul></p>
+            <a class="card-link" href="https://www.sciencemuseum.org.uk">Visit The Horniman!</a>
+        </div>
+      </div>
+    </div>
     <br />
-    <br />
-    <h4>Scicene Museum, My Museum Facts</h4>
-    About: The world's leading group of science museums, we share our
+    <div id="science" class="container-lg">
+      <div class="card" style="width: 50rem">
+        <div class="card-body">
+          <h5 class="card-title">Scicene Museum - My Museum Facts!</h5>
+          <h6 class="card-subtitle mb-2 text-muted">South Kensington, South West London</h6>
+          <p class="card-text">
+            The world's leading group of science museums, we share our
     unparalleled collection—spanning science, technology, engineering,
     mathematics and medicine
+          </p>
+          <p class="card-text">Opening Times: Monday- Sunday 10am-6pm</p>
+          <p class="card-text"><strong> Events Going On:</strong>
+            <ul>
+              <li>Cancer Revolution:Science,Innovation & Hope</li>
+              <li>Science Fiction: Voyage to the edge of imagination</li>
+              <li>
+                Summer reading challenge 2022-Gadgeteers:mainly aimed at children during
+                the summer holidays.
+              </li>
+            </ul></p>
+            <a class="card-link" href="https://www.sciencemuseum.org.uk">Visit The Science Museum!</a>
+        </div>
+      </div>
+    </div>
     <br />
-    Location:South Kensington, South West London
-    <br />
-    Opening Times:Monday- Sunday 10am-6pm
-    <br />
-    <br />
-    <strong>Events going on!</strong>
-    <ul>
-      <li>Cancer Revolution:Science,Innovation & Hope</li>
-      <li>Science Fiction: Voyage to the edge of imagination</li>
-      <li>
-        Summer reading challenge 2022-Gadgeteers:mainly aimed at children during
-        the summer holidays.
-      </li>
-    </ul>
-    <a href="https://www.sciencemuseum.org.uk">Visit The Science Museum!</a>
-    <br />
-    <br />
-    <br />
-    <br />
+    
     <br />
     <footer>
       <h3>Contact</h3>
       Contact us via email info@mymuseum.com
     </footer>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"
+  ></script>
 </html>
